@@ -1,180 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property Platinum</title>
     <style>
-        body {
-            background-color: rgb(55, 174, 55);
-        }
+      body {
+        background-color: rgb(55, 174, 55);
+      }
 
-        table {
-            border: 3px solid white;
-            padding: 3px;
-            border-radius: 7px;
-            margin-left: 10%;
-            margin-top: 1%;
-            height: auto;
+      table {
+        border: 3px solid white;
+        padding: 3px;
+        border-radius: 7px;
 
-        }
+        margin-top: 1%;
+        height: auto;
+      }
 
-        td {
-            border: 1px solid white;
-            color: rgb(132, 79, 181);
-            background-color: rgb(213, 164, 146);
-            border-radius: 7px;
-        }
+      td {
+        border: 1px solid white;
+        color: rgb(132, 79, 181);
 
-        select {
-            width: 300px;
-        }
+        border-radius: 7px;
+      }
 
-        input {
-            width: 200px;
-        }
+      select {
+        width: fit-content;
+      }
 
-        .box {
-            width: 98%;
-        }
+      input {
+        width: 200px;
+      }
 
-        .button {
-            width: 300px;
-        }
+      .box {
+        width: 98%;
+      }
 
-        .some {
-            color: rgb(245, 36, 36);
-            margin-top: 5%;
-            margin-left: 10%;
-            border-radius: 5px;
-        }
+      .button {
+        width: 300px;
+      }
 
+      .some {
+        color: rgb(245, 36, 36);
+        margin-top: 5%;
+        margin-left: 10%;
+        border-radius: 5px;
+      }
 
-        .ab {
-            color: rgb(239, 13, 13);
-            font-weight: 50px;
-        }
+      .ab {
+        color: rgb(239, 13, 13);
+        font-weight: 50px;
+      }
 
-        h2 {
-            background-color: white;
-            color: crimson;
-            text-align: center;
-            width: 65%;
-            margin-left: 10%;
-            border-radius: 6px;
-        }
+      h2 {
+        background-color: white;
+        color: crimson;
+        margin-left: 35%;
+        width: fit-content;
+
+        border-radius: 6px;
+      }
+      section {
+        background-color: rgb(213, 164, 146);
+        width: fit-content;
+        padding: 10px;
+        margin-left: 10%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h2>Platinum Properties</h2>
-    <table>
+  <body>
+    <section>
+      <h2>Platinum Properties</h2>
+      <table>
         <thead>
-            <tr>
-                <td class="ab">Property-info</td>
-                <td> IPersonal-info</td>
-                <td>Extra Features</td>
-            </tr>
-            <tr>
-                <td colspan="3">Property Information</td>
-
-            </tr>
-            <tr>
-                <td>Select Property Type: <br>
-                    <select>
-                        <option value="Apartment">Apartment</option>
-                        <option value="Singlehouse">Singlehouse</option>
-                        <option value="Villa">Villa</option>
-                    </select>
-                </td>
-                <td>BHK Type
-                    <br>
-                    <select>
-                        <option value="2BHK">2BHK</option>
-                        <option value="3BHK">3BHK</option>
-                        <option value="4BHK">4BHK</option>
-                    </select>
-
-                </td>
-                <td>Select the possession status
-                    <br>
-                    <select>
-                        <option value="Readytomove">Ready to move</option>
-                        <option value="Readytomove">Ready to move</option>
-                        <option value="Readytomove">Ready to move</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Price Range:</td>
-                <td><input type="text" placeholder="2500000" class="button">
-                </td>
-                <td><input type="text" placeholder="3500000" class="button"></td>
-            </tr>
-            <tr>
-                <td>Location:</td>
-                <td colspan="2"><input type="text" placeholder="Coimbatore" class="box"></td>
-
-            </tr>
-            <tr>
-                <td colspan="3" class="ab">Personal Information</td>
-
-            </tr>
-            <tr>
-                <td>Customer Name</td>
-                <td colspan="2"><input type="text" placeholder="Alex" class="box"></td>
-
-            </tr>
-            <tr>
-                <td>Phone Number</td>
-                <td colspan="2">
-                    <input type="tel" placeholder="9876543210" class="box">
-                </td>
-
-            </tr>
-            <tr>
-                <td>Email ID</td>
-                <td colspan="2">
-                    <input type="email" placeholder="alex@gmail.com" class="box">
-                </td>
-
-            </tr>
-            <tr>
-                <td colspan="3" class="ab">Extra featurs</td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" name="parking" id="parking">
-                    <label for="parking">Parking</label>
-                </td>
-                <td><input type="checkbox" name="SwimmingPool" id="SwimmingPool">
-                    <label for="swimmingPool">Swimming Pool</label>
-                </td>
-                <td><input type="checkbox" name="SuperMarket" id="supermarket">
-                    <label for="supermarket">Super Market</label>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="park" id="park">
-                    <label for="park">Park</label>
-                </td>
-                <td><input type="checkbox" name="library" id="library">
-                    <label for="library">library</label>
-                </td>
-                <td><input type="checkbox" name="playground" id="playground">
-                    <label for="playground">Play Ground</label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">**Click here to unlock exclusive offers</td>
-
-            </tr>
+          <tr>
+            <td class="ab">Property-info</td>
+            <td>IPersonal-info</td>
+            <td>Extra Features</td>
+          </tr>
+          <tr>
+            <td colspan="3">Property Information</td>
+          </tr>
+          <tr>
+            <td>
+              Select Property Type: <br />
+              <select>
+                <option value="Apartment">Apartment</option>
+                <option value="Singlehouse">Singlehouse</option>
+                <option value="Villa">Villa</option>
+              </select>
+            </td>
+            <td>
+              BHK Type
+              <br />
+              <select>
+                <option value="2BHK">2BHK</option>
+                <option value="3BHK">3BHK</option>
+                <option value="4BHK">4BHK</option>
+              </select>
+            </td>
+            <td>
+              Select the possession status
+              <br />
+              <select>
+                <option value="Readytomove">Ready to move</option>
+                <option value="Readytomove">Ready to move</option>
+                <option value="Readytomove">Ready to move</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Price Range:</td>
+            <td><input type="text" placeholder="2500000" class="button" /></td>
+            <td><input type="text" placeholder="3500000" class="button" /></td>
+          </tr>
+          <tr>
+            <td>Location:</td>
+            <td colspan="2">
+              <input type="text" placeholder="Coimbatore" class="box" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="ab">Personal Information</td>
+          </tr>
+          <tr>
+            <td>Customer Name</td>
+            <td colspan="2">
+              <input type="text" placeholder="Alex" class="box" />
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td colspan="2">
+              <input type="tel" placeholder="9876543210" class="box" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email ID</td>
+            <td colspan="2">
+              <input type="email" placeholder="alex@gmail.com" class="box" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="ab">Extra featurs</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="parking" id="parking" />
+              <label for="parking">Parking</label>
+            </td>
+            <td>
+              <input type="checkbox" name="SwimmingPool" id="SwimmingPool" />
+              <label for="swimmingPool">Swimming Pool</label>
+            </td>
+            <td>
+              <input type="checkbox" name="SuperMarket" id="supermarket" />
+              <label for="supermarket">Super Market</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="park" id="park" />
+              <label for="park">Park</label>
+            </td>
+            <td>
+              <input type="checkbox" name="library" id="library" />
+              <label for="library">library</label>
+            </td>
+            <td>
+              <input type="checkbox" name="playground" id="playground" />
+              <label for="playground">Play Ground</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">**Click here to unlock exclusive offers</td>
+          </tr>
         </thead>
-    </table>
-    <input type="submit" name="checkavalibility" id="checkavalibility" value="CHECK AVALIBILITY" class="some">
-</body>
-
+      </table>
+      <input
+        type="submit"
+        name="checkavalibility"
+        id="checkavalibility"
+        value="CHECK AVALIBILITY"
+        class="some"
+      />
+    </section>
+  </body>
 </html>
